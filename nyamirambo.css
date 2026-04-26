@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #161617;
+    padding: 15px 30px;
+}
+
+nav h2 {
+    color: white;
+    margin: 0;
+}
+
+nav .links {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+nav a:hover {
+    color: rgb(133, 186, 222);
+    background-color: rgba(133, 186, 222, 0.1);
+}
+
+nav a.active {
+    background-color: #667eea;
+    color: white;
+}
+
+main {
+    flex: 1;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.hero {
+    height: 60vh;
+    background-image: url("images/nyamirambo1-image.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+    color: #87CEEB;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.9);
+}
+
+.hero p {
+    font-size: 20px;
+    color: #ffffff;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.9);
+}
+
+.content-section {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.content-section h2 {
+    color: #3794d6;
+    margin-bottom: 15px;
+}
+
+.content-section p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.tour-section {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.tour-section h2 {
+    color: #48b2d9;
+    margin-bottom: 10px;
+}
+
+.tour-section p {
+    color: #666;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.tour-steps {
+    list-style-position: inside;
+    line-height: 2.2;
+}
+
+.tour-steps li {
+    margin-bottom: 15px;
+    padding-left: 15px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-left: 4px solid #5e92e5;
+    border-radius: 4px;
+}
+
+.tour-steps strong {
+    color: #4486cd;
+}
+
+.image-gallery {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.image-gallery h2 {
+    color: #44a1d6;
+    margin-bottom: 20px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item {
+    text-align: center;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+.placeholder-image {
+    background-color: #d3d3d3;
+    border: 2px dashed #999;
+    border-radius: 8px;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.gallery-item p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #666;
+}
+
+.booking-section {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.booking-section h2 {
+    color: #46a9c5;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.pricing {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.price-card {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+    padding: 25px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.price-card:hover {
+    transform: translateY(-10px);
+}
+
+.price-card h3 {
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.price-card .price {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.price-card p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.book-btn {
+    background-color: white;
+    color: #53aae4;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.book-btn:hover {
+    background-color: #f9f9f9;
+}
+
+.tips-section {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.tips-section h2 {
+    color: #6acafb;
+    margin-bottom: 15px;
+}
+
+.tips-list {
+    list-style-position: inside;
+    line-height: 2;
+}
+
+.tips-list li {
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+footer {
+    margin-top: auto;
+    background-color: #28282e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    nav .links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    main {
+        padding: 20px;
+    }
+    
+    .hero {
+        padding: 40px 20px;
+    }
+    
+    .hero h1 {
+        font-size: 32px;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .pricing {
+        grid-template-columns: 1fr;
+    }
+}
