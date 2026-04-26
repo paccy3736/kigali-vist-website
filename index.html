@@ -13,6 +13,10 @@
 
     <nav>
         <h2>Kigali Guide</h2>
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Search...">
+            <button class="search-btn">🔍</button>
+        </div>
         <div class="links">
             <a href="index.html">Home</a>
             <a href="memorial.html">Memorial</a>
@@ -37,14 +41,30 @@
             <h2>Featured Attractions</h2>
             <div class="cards-container">
                 <div class="card">
-                    <img src="images/mount.jpg" alt="Mount Kigali">
+                    <img src="images/memorial1-image.jpg" alt="Kigali Genocide Memorial">
+                    <h3>Genocide Memorial</h3>
+                    <p>A place of remembrance and education</p>
+                    <a href="memorial.html">Explore</a>
+                </div>
+
+                <div class="card">
+                    <img src="images/mt-kigali8-image.jpg" alt="Mount Kigali">
                     <h3>Mount Kigali</h3>
+                    <p>Climb, explore, and enjoy breathtaking views</p>
                     <a href="mount.html">Explore</a>
                 </div>
 
                 <div class="card">
-                    <img src="images/restaurant.jpg" alt="Restaurants">
+                    <img src="images/nyamirambo1-image.jpg" alt="Nyamirambo">
+                    <h3>Nyamirambo</h3>
+                    <p>Experience authentic Kigali culture</p>
+                    <a href="nyamirambo.html">Explore</a>
+                </div>
+
+                <div class="card">
+                    <img src="images/burger-beer-saturdays restourent.jpg" alt="Restaurants">
                     <h3>Restaurants</h3>
+                    <p>Discover the flavors of Rwanda</p>
                     <a href="restaurants.html">Explore</a>
                 </div>
             </div>
@@ -52,26 +72,69 @@
 
         <section class="contact-form-section">
             <h2>Get In Touch</h2>
-            <p>Have questions about Kigali? Contact us and we'll be happy to help!</p>
-            <form class="contact-form">
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
+            <div class="form-container">
+                <div class="form-side">
+                    <p>Have questions about Kigali? Contact us and we'll be happy to help!</p>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone:</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
                 </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                <div class="info-side">
+                    <h3>Why Visit Kigali?</h3>
+                    <div class="info-cards">
+                        <div class="info-card">
+                            <div class="icon">🏛️</div>
+                            <h4>Rich History</h4>
+                            <p>Explore Rwanda's journey of resilience and reconciliation</p>
+                        </div>
+                        <div class="info-card">
+                            <div class="icon">🌄</div>
+                            <h4>Natural Beauty</h4>
+                            <p>Discover stunning landscapes and scenic mountain views</p>
+                        </div>
+                        <div class="info-card">
+                            <div class="icon">🍽️</div>
+                            <h4>Amazing Cuisine</h4>
+                            <p>Taste authentic Rwandan flavors and international dishes</p>
+                        </div>
+                        <div class="info-card">
+                            <div class="icon">🎨</div>
+                            <h4>Vibrant Culture</h4>
+                            <p>Experience local markets, crafts, and warm hospitality</p>
+                        </div>
+                    </div>
+                    <div class="quick-stats">
+                        <div class="stat">
+                            <span class="stat-number">4+</span>
+                            <span class="stat-label">Top Attractions</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">1.8K</span>
+                            <span class="stat-label">Elevation (m)</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">25°C</span>
+                            <span class="stat-label">Avg Temperature</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="phone">Phone:</label>
-                    <input type="tel" id="phone" name="phone">
-                </div>
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="submit-btn">Send Message</button>
-            </form>
+            </div>
         </section>
     </main>
     
