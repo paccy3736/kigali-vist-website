@@ -524,7 +524,6 @@ footer {
 }
 
 
-/* Enhanced Footer Styles */
 .footer-content {
     max-width: 1200px;
     margin: 0 auto;
@@ -607,4 +606,108 @@ footer {
     margin: 0;
     font-size: 14px;
     color: #ccc;
+}
+
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+    
+    nav .links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    nav a {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+    
+    main {
+        padding: 20px 15px;
+    }
+    
+    .hero {
+        height: 40vh;
+        padding: 30px 20px;
+    }
+    
+    .hero h1 {
+        font-size: 32px;
+    }
+    
+    .hero p {
+        font-size: 16px;
+    }
+    
+    .intro-section,
+    .restaurant-section,
+    .menu-section,
+    .audio-section,
+    .image-gallery,
+    .booking-section {
+        padding: 20px;
+    }
+    
+    .restaurant-cards {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .form-container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
+    .menu-table {
+        font-size: 12px;
+        display: block;
+        overflow-x: auto;
+    }
+    
+    .menu-table th,
+    .menu-table td {
+        padding: 8px 5px;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 10px;
+    }
+    
+    .gallery-item img {
+        height: 150px;
+    }
+    
+    .dish-showcase {
+        padding: 15px;
+    }
+    
+    .dish-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+    
+    .restaurant-card {
+        padding: 20px;
+    }
+    
+    .menu-table {
+        font-size: 11px;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
 }

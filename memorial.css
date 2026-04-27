@@ -321,7 +321,6 @@ footer {
 }
 
 
-/* Enhanced Footer Styles */
 footer {
     margin-top: auto;
     background-color: #28282e;
@@ -438,7 +437,7 @@ footer {
     border-radius: 8px;
     overflow: hidden;
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    padding-bottom: 56.25%;
 }
 
 .video-container video {
@@ -448,4 +447,84 @@ footer {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+    
+    nav .links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    nav a {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+    
+    main {
+        padding: 20px 15px;
+    }
+    
+    .hero {
+        height: 40vh;
+        padding: 30px 20px;
+    }
+    
+    .hero h1 {
+        font-size: 32px;
+    }
+    
+    .hero p {
+        font-size: 16px;
+    }
+    
+    .sections-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .content-section,
+    .info-section,
+    .image-gallery,
+    .location-section,
+    .visiting-tips,
+    .video-section,
+    .cta-section {
+        padding: 20px;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 10px;
+    }
+    
+    .gallery-item img {
+        height: 150px;
+    }
+    
+    .info-table {
+        font-size: 14px;
+    }
+    
+    .info-table th,
+    .info-table td {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
 }
