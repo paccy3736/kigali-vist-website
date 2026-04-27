@@ -206,8 +206,8 @@ main {
 
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
 }
 
 .gallery-item {
@@ -218,20 +218,22 @@ main {
 
 .gallery-item img {
     width: 100%;
-    height: 250px;
+    height: 180px;
     object-fit: cover;
     border-radius: 8px;
-    transition: transform 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .gallery-item img:hover {
     transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .gallery-item p {
-    margin-top: 10px;
+    margin-top: 8px;
     font-weight: bold;
     color: #666;
+    font-size: 14px;
 }
 
 .video-section {
@@ -389,4 +391,90 @@ footer {
     .info-grid {
         grid-template-columns: 1fr;
     }
+}
+
+
+/* Enhanced Footer Styles */
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-section h3 {
+    color: #84fab0;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer-section p {
+    line-height: 1.6;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #84fab0;
+}
+
+.footer-contact {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-contact li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-icon {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+    display: inline-block;
+}
+
+.social-icon:hover {
+    color: #84fab0;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+    color: #ccc;
 }
