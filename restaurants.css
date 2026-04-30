@@ -229,31 +229,6 @@ main {
     background-color: #f0f0f0;
 }
 
-.placeholder {
-    background-color: #e8e8e8;
-    border: 2px dashed #999;
-    border-radius: 8px;
-    padding: 40px;
-    text-align: center;
-    color: #666;
-    margin: 20px 0;
-    font-size: 16px;
-}
-
-.placeholder-image {
-    background-color: #d3d3d3;
-    border: 2px dashed #999;
-    border-radius: 8px;
-    width: 100%;
-    height: 250px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #999;
-    font-size: 18px;
-    margin: 10px 0;
-}
-
 .image-gallery {
     background-color: white;
     padding: 30px;
@@ -463,56 +438,6 @@ main {
     }
 }
 
-footer {
-    margin-top: auto;
-    background-color: #28282e;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        gap: 15px;
-    }
-    
-    nav .links {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
-    main {
-        padding: 20px;
-    }
-    
-    .hero {
-        padding: 40px 20px;
-    }
-    
-    .hero h1 {
-        font-size: 32px;
-    }
-    
-    .gallery-grid {
-        flex-wrap: wrap;
-    }
-    
-    .restaurant-cards {
-        grid-template-columns: 1fr;
-    }
-    
-    .menu-table {
-        font-size: 14px;
-    }
-    
-    .menu-table th,
-    .menu-table td {
-        padding: 8px;
-    }
-}
-
-
 .footer-content {
     max-width: 1200px;
     margin: 0 auto;
@@ -636,7 +561,6 @@ footer {
     .intro-section,
     .restaurant-section,
     .menu-section,
-    .audio-section,
     .image-gallery,
     .booking-section {
         padding: 20px;
@@ -688,15 +612,11 @@ footer {
         font-size: 28px;
     }
     
-    .restaurant-card {
-        padding: 20px;
-    }
-    
     .menu-table {
         font-size: 11px;
     }
     
     .gallery-grid {
-        grid-template-columns: 1fr;
+        flex-wrap: wrap;
     }
 }
